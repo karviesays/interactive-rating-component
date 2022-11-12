@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --light-grey: hsl(217, 12%, 63%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  background: #000;
+  color: var(--light-grey);
+}
+li {
+  list-style: none;
+}
+main h1 {
+  color: var(--white);
+}
+
+main p,
+main span {
+  color: var(--light-grey);
+}
+
+.wrapper {
+  padding: 1.5em;
+  background: var(--very-dark-blue);
+  width: min(100%, 375px);
+  margin: 10rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.star-container {
+  padding: 1em 0;
+}
+.star {
+  background: var(--dark-blue);
+  padding: 0.5em;
+  border-radius: 50px;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  margin: 2em 0;
+  background: var(--dark-blue);
+  padding: 0.8em 1.4em;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.rating:hover,
+.rating:active {
+  transition: all 0.3s;
+  background: var(--orange);
+  color: var(--white);
+}
+.rating:focus {
+  background: var(--medium-grey);
+  color: var(--white);
+}
+.submit-btn {
+  display: inline-block;
+  width: 100%;
+  background: var(--orange);
+  border: none;
+  border-radius: 20px;
+  padding: 1em;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 0.2rem;
+}
+
+.submit-btn:hover,
+.submit:active {
+  transition: all 0.3s;
+  background: var(--white);
+  color: var(--orange);
+}
+
+/* thank you modal */
+.hidden {
+  display: none;
+}
+.thank-you-modal-inner {
+  text-align: center;
+}
+.thank-you-icon {
+  padding: 1em 0;
+}
+
+#message {
+  display: inline-block;
+  background: var(--dark-blue);
+  color: var(--orange);
+  border-radius: 50px;
+  padding: 0.3rem 1rem;
+}
+
+.sub-heading {
+  padding: 0.8em 0;
+}
