@@ -7,7 +7,8 @@ const message = document.querySelector("#message");
 
 ratings.forEach(function (rating) {
   rating.addEventListener("click", function (e) {
-    chosenRating.innerHTML = e.target.id;
+    const numberRating = Number(e.target.id);
+    chosenRating.innerHTML = numberRating;
   });
 });
 
